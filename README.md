@@ -1,4 +1,4 @@
-# STM32 LED Control
+# Embedded LED Control Using STM32 GPIO, UART, DMA, and EXTI
 This project involves the use of pre-defined typed commands and a push button to control the state of an LED. It demonstrates the use of different peripherals of STM32F411 including GPIO, UART, DMA, and EXTI. The push button and LED used for this demo project are the user push buttons (PC13) and user LED (PA5) on the Nucleo F411 board.
 
 ## Peripherals Used
@@ -9,7 +9,7 @@ GPIO is configured to use User LED (PA5) as output, User Push Button (PC13) as i
 UART is the communication protocol to send the typed commands from computer CLI terminal to the microcontroller and control the LED state.
 
 ### DMA
-DMA is enabled in the UART  configuration to demonstrate efficiency in only interrupting the main program once commands are typed completely n the computer CLI terminal.
+DMA is enabled in the UART  configuration to demonstrate efficiency in only interrupting the main program once commands are typed completely in the computer CLI terminal.
 
 ### EXTI
 Aside from typed commands, EXTI is also configured for the User LED to respond (toggle) from Push Button input triggers.
